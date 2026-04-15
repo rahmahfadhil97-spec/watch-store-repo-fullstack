@@ -1,0 +1,118 @@
+/* src/styles/App.css */
+
+/* الإعدادات العامة - Global Styles */
+:root {
+    --primary-color: #c5151d; /* أحمر تودور الشهير */
+    --bg-dark: #111111;
+    --card-bg: #1a1a1a;
+    --text-light: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* الهيدر - Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #333;
+  }
+  
+  .logo {
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+  
+  /* قسم العرض - Hero Section */
+  .hero {
+    text-align: center;
+    padding: 120px 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  
+  /* شبكة المنتجات - Watch Grid */
+  .watch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 60px 5%;
+  }
+  
+  .watch-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .watch-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .watch-image {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .watch-card h3 {
+    font-size: 1.1rem;
+    margin: 15px 0 5px;
+  }
+  
+  .watch-card p {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .price {
+    color: var(--text-light);
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .btn-discover {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    text-transform: uppercase;
+    transition: 0.2s;
+  }
+  
+  .btn-discover:hover {
+    background-color: #a31118;
+  }
